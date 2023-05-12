@@ -123,13 +123,13 @@ export default function Login() {
 
           <div style={{ marginTop: "25px" }}>
             <div className="text-center mb-1">
-              <Link href="/reset-password" underline="hover">
+              <Link to="/reset-password" underline="hover">
                 {" "}
                 Forgot Password{" "}
               </Link>
             </div>
             <div className="text-center">
-              <Link href="/account-registration" underline="hover">
+              <Link to={()=>navigate('/account-registration')} underline="hover">
                 {" "}
                 Create A New Account{" "}
               </Link>
