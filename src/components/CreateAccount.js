@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import * as yup from "yup";
 import { useFormik } from "formik";
-import { Checkbox, Link, TextField } from "@mui/material";
+import { Checkbox, TextField } from "@mui/material";
 import { url } from "../App";
 import { toast } from "react-toastify";
 import axios from "axios";
@@ -162,12 +162,12 @@ export default function CreateAccount() {
 
           <div style={{ marginTop: "25px" }}>
             <div className="text-center mb-1">
-              <Link href="/reset-password" underline="hover">
+              <Link to="/reset-password" underline="hover">
                 Forgot Password?
               </Link>
             </div>
             <div className="text-center">
-              <Link href="/" underline="hover">
+              <Link to="/" underline="hover">
                 Already Have A Account? Login.
               </Link>
             </div>
