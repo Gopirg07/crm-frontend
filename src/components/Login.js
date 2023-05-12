@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import * as yup from "yup";
 import { useFormik } from "formik";
-import { Checkbox, Link, TextField } from "@mui/material";
+import { Checkbox, TextField } from "@mui/material";
 import { toast } from "react-toastify";
 import axios from "axios";
 
@@ -129,7 +129,7 @@ export default function Login() {
               </Link>
             </div>
             <div className="text-center">
-              <Link to={()=>navigate('/account-registration')} underline="hover">
+              <Link to="/account-registration" underline="hover">
                 {" "}
                 Create A New Account{" "}
               </Link>
