@@ -27,8 +27,8 @@ export default function Login() {
   const { values, handleChange, handleBlur, handleSubmit, errors, touched } =
     useFormik({
       initialValues: {
-        email: "",
-        password: "",
+        email: "gopi.rg03@gmail.com",
+        password: "gopi@321",
       },
       validationSchema: LoginSchemaValidation,
       onSubmit: (val) => {
